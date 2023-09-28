@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
-
+    listaNum = [];
     //PROCESSAMENTO
-
+    for (let index = 1; index <= 5; index++) {
+        const num = Number(prompt(`Informe um número`));
+        listaNum.push(num)
+    }
+    listaNum.sort((a, b) => b - a)
 
     //SAÍDA
+    document.write(`O maior número é: ${listaNum[0]}`);
+
+    
 
 </script>

@@ -7,8 +7,16 @@
     */
 
     //ENTRADA
-    const quantidadeNotas = Number(prompt('Quantas notas o aluno teve?'));
-    
+    let notas = Number(prompt(`Quantas notas o aluno obteve?`).trim())
+    let totalNotas = [];
+
+
+
+    //PROCESSAMENTO
+    for (let controle = 1; controle <= notas; controle++) {
+        totalNotas = (totalNotas / notas);
+        totalNotas.push(notas);
+    }
         
     
 

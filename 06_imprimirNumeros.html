@@ -6,11 +6,38 @@
     */
 
     //ENTRADA
+    let num1 = parseFloat(prompt("Insira um número"));
+    let num2 = parseFloat(prompt("Insira outro número"));
 
-    
     //PROCESSAMENTO
+    let numImpares = [];
+    let numPares = [];
+    if (num1 == num2) {
+        alert(`Os números são iguais!`);
+    } else if (num1 > num2) {
+        for (let i = num2; i < num1; i++) {
+            if (i % 2 == 0) {
+                numPares.push(i);
+            } else {
+                numImpares.push(i);
+            }
 
-    
-    //SAÍDA
+        }
+    } else {
+        for (let i = num1; i < num2; i++) {
+            if (i % 2 == 0) {
+                numPares.push(i);
+            } else {
+                numImpares.push(i);
+            }
+
+        }
+    }
+   alert(`Números impares: ${numImpares} e os números pares são: ${numPares}`);
+
 
 </script>
+
+    
+
+

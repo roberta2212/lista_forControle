@@ -5,22 +5,23 @@
     Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
     */
 
-    const numeroPrimo = parseInt('qual numero deseja validar se é numero primo');
-    let divisivel = 0;
-    for (let contador = 1; contador <= numeroPrimo; contador++) {
-        if (numeroPrimo % contador === 0)
-            divisivel = divisivel + 1;
-        document.write(`${numeroPrimo} dividido por ${contador} sobra zero! SOMA UM!</br>`);
-    }
-    else {
-        document.write(`${numeroPrimo} dividido por ${contador} não sobra zero! NÃO SOMA NADA!</br>`);
-    }
-    if (divisivel === 2) {
-        document.write(`O número ${numeroPrimo} é um número primo, pois só divide por um e por ele mesmo!`);
-    }
-    else {
-        document.write(`O número ${numeroPrimo} não é um número primo, pois é dividido por ${divisivel} números! `);
-    }
+    let primo = Number(prompt(`Informe um número`).trim());
 
-
+    //PROCESSAMENTO
+    if (numero < 2) {
+        alert(`O número não é primo, porque é menor que 2`);
+    } else {
+        let eprimo = true;
+    }
+    for (let contador = 2; contador < numero; contador++) {
+        if (numero % contador == 0) {
+            eprimo = false;
+        }
+    }
+    if (eprimo) {
+        alert(`O número ${numero} é primo`);
+    } else {
+        alert(`O número${numero} não é primo`)
+    }
+    //SAÍDA
 </script>
